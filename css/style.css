@@ -1,10 +1,9 @@
-@@ -0,0 +1,3415 @@
 @charset "UTF-8";
 /* CUSTOM FONTS */
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/circular-bold-italic.otf");
-  src: local("☺"), url("../fonts/circular-bold-italic.otf") format("otf"), url("../fonts/circular-bold-italic.otf") format("truetype"), url("../fonts/Mont-Regular.svg") format("svg");
+  src: url("../fonts/circular-medium.otf");
+  src: local("☺"), url("../fonts/circular-medium.otf") format("otf"), url("../fonts/circular-medium.otf") format("truetype"), url("../fonts/Mont-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -1481,15 +1480,16 @@ height: auto;
   flex-wrap: wrap;
   padding: 150px 0;
   text-align: center;
-  
- 
 }
-
-
 .main-services .titles {
   padding: 0 20%;
   color: #fff;
+  text-align : center;
+  position:relative;
+  right: 45px;
+
 }
+
 .main-services figure {
   display: inline-block;
   margin-bottom: 0;
@@ -1512,7 +1512,7 @@ height: auto;
   font-size: 40px;
   opacity: 0.1;
 }
-.main-services article h4 {
+.main-services article h3 {
   display: block;
   margin-top: -25px;
   font-weight: 600;
@@ -1540,6 +1540,8 @@ height: auto;
 
 #tooltip:hover #tooltiptext1 {
   visibility: visible;
+  opacity:1 ;
+  bottom : 110px;
 }
 #tooltip #tooltiptext2 {
   visibility: hidden;
@@ -1557,6 +1559,7 @@ height: auto;
 
 #tooltip:hover #tooltiptext2 {
   visibility: visible;
+  bottom : 110px;
 }
 #tooltip #tooltiptext3 {
   visibility: hidden;
@@ -1566,14 +1569,18 @@ height: auto;
   text-align: center;
   border-radius: 6px;
   padding: 10px 0;
+  
 
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  
 }
 
 #tooltip:hover #tooltiptext3 {
   visibility: visible;
+  
+  bottom : 110px;
 }
 #tooltip #tooltiptext4 {
   visibility: hidden;
@@ -1591,6 +1598,8 @@ height: auto;
 
 #tooltip:hover #tooltiptext4 {
   visibility: visible;
+  bottom : 110px;
+ 
 }
 
 #tooltip #tooltiptext5 {
@@ -1609,6 +1618,7 @@ height: auto;
 
 #tooltip:hover #tooltiptext5 {
   visibility: visible;
+  bottom : 110px;
 }
 #tooltip #tooltiptext6 {
   visibility: hidden;
@@ -1626,6 +1636,8 @@ height: auto;
 
 #tooltip:hover #tooltiptext6 {
   visibility: visible;
+  
+  bottom : 110px;
 }
 #tooltip #tooltiptext7 {
   visibility: hidden;
@@ -1643,6 +1655,7 @@ height: auto;
 
 #tooltip:hover #tooltiptext7 {
   visibility: visible;
+  bottom : 110px;
 }
 #tooltip #tooltiptext8 {
   visibility: hidden;
@@ -1660,6 +1673,7 @@ height: auto;
 
 #tooltip:hover #tooltiptext8 {
   visibility: visible;
+  bottom : 110px;
 }
 #tooltip #tooltiptext9 {
   visibility: hidden;
@@ -1674,9 +1688,10 @@ height: auto;
   position: absolute;
   z-index: 1;
 }
-
 #tooltip:hover #tooltiptext9 {
   visibility: visible;
+  
+  bottom : 110px;
 }
 /* WORKS */
 .works {
@@ -1790,9 +1805,20 @@ height: auto;
   padding: 150px 0;
   color: #fff;
 }
-.featured-services .col-lg-3:nth-child(2n+2) {
-  margin-top: 134px;
+.featured-services h5 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
+.featured-services .col-lg-3:nth-child(n) {
+  margin : 12px ;
+  
+}
+.featured-services .row {
+  width: 100%;
+}
+
 .featured-services figure {
   width: 100%;
   display: flex;
@@ -1997,6 +2023,11 @@ height: auto;
   font-size: 60px;
   font-weight: 800;
 }
+.our-awards h5{font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;}
+
 
 /* SHOWREEL */
 .showreel {
@@ -2483,6 +2514,14 @@ height: auto;
   top: 0;
   transform: translateX(-50%);
 }
+.logos h5{
+  
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  
+}
 
 /* BLOG */
 .post-header {
@@ -2919,15 +2958,20 @@ height: auto;
   padding: 150px 0;
   color: #fff;
 }
-.work-with-us h6 {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 20px;
+.work-with-us h5 {
+
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  
 }
+
 .work-with-us h2 {
   font-size: 6vw;
   font-weight: 800;
   margin-bottom: 50px;
+
 }
 .work-with-us p {
   display: block;
@@ -2948,7 +2992,7 @@ height: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top : -40px;
+  padding-top: 150px;
 }
 .contact h5 {
   font-weight: 600;
@@ -2967,7 +3011,7 @@ height: auto;
 }
 .contact .contact-form {
   display: block;
-  margin-top: 50px;
+ 
 }
 .contact .contact-form h5 {
   margin-bottom: 40px;
@@ -3060,10 +3104,12 @@ height: auto;
   padding-bottom: 100px;
   margin-bottom: 100px;
 }
-.footer .career h6 {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 20px;
+.footer .career h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
 }
 .footer .career h2 {
   font-size: 3vw;
@@ -3077,10 +3123,10 @@ height: auto;
 .footer .logo img {
   height: 42px;
 }
-.footer h5 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 20px;
+.footer h7 {
+  font-size: 1.5vw;
+  font-weight: 900;
+  margin-bottom: 50px;
 }
 .footer .sub-footer {
   width: 100%;
