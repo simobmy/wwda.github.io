@@ -3124,10 +3124,11 @@ height: auto;
   height: 42px;
 }
 .footer h7 {
-  font-size: 1.5vw;
-  font-weight: 900;
-  margin-bottom: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
+
 .footer .sub-footer {
   width: 100%;
   display: flex;
