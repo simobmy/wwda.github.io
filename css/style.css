@@ -883,8 +883,8 @@ moe .color-dark .left-side ul li a:hover {
   color: #fff;
 }
 .navbar.light .logo a img {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(00.25s) invert(1);
+  filter: brightness(00.25s) invert(1);
 }
 .navbar.light .main-menu ul li a {
   color: #fff;
@@ -3104,12 +3104,10 @@ height: auto;
   padding-bottom: 100px;
   margin-bottom: 100px;
 }
-.footer .career h5 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-
+.footer .career h6 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 .footer .career h2 {
   font-size: 3vw;
@@ -3123,12 +3121,11 @@ height: auto;
 .footer .logo img {
   height: 42px;
 }
-.footer h7 {
+.footer h5 {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-
 .footer .sub-footer {
   width: 100%;
   display: flex;
