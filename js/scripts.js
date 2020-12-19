@@ -89,7 +89,14 @@
 		
 		
 		
-		
+			$('#contact').submit(function(e){
+				e.preventDefault();
+				
+				var $form = $(this);
+				$.post($form.sttr('action'), $form.serialize()).then(function(){
+				alert("Thank you!");
+				});
+				});
 		// SWIPER SLIDER
 			var mySwiper = new Swiper ('.swiper-container', {
 			slidesPerView: 'auto',
